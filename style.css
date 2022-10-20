@@ -1,0 +1,38 @@
+table.chessboard{
+    border-collapse: collapse; 
+    /* for keeping the borders of td no gap between */
+    margin: auto;
+}
+
+table.chessboard td{
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    /* border: thin solid black; */
+}
+
+table.chessboard th{
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+table.chessboard > tbody > tr:first-child>td{
+    border-top: medium solid black;
+}
+
+table.chessboard > tbody > tr:last-child>td{
+    border-bottom: medium solid black;
+}
+
+table.chessboard > tbody > tr >td:first-of-type{
+    border-left: medium solid black;
+}
+
+table.chessboard > tbody > tr >td:last-of-type{
+    border-right: medium solid black;
+}
+
+table.chessboard > tbody > tr:nth-child(odd)>td:nth-of-type(odd),
+table.chessboard > tbody > tr:nth-child(even)>td:nth-of-type(even){
+    background-color: grey;
+}
